@@ -17,8 +17,15 @@ node {
             sleep(20)
             script{
                 echo "printing the data from the docker file"
+                a=12 
             }
 
+        }
+    }
+
+    stage("accessing the value of docker in anotehr stage"){
+        script { 
+            echo $a
         }
     }
 
