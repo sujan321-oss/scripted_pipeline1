@@ -14,7 +14,6 @@ node {
     stage("run inside the docker"){
         docker.image(KEY_IMAGE).pull()
         docker.image(KEY_IMAGE).inside{
-            sleep(20)
             script{
                 echo "printing the data from the docker file"
                 a=12 
@@ -25,7 +24,7 @@ node {
 
     stage("accessing the value of docker in anotehr stage"){
         script { 
-            echo $a
+            println("$a")
         }
     }
 
