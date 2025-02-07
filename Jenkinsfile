@@ -16,17 +16,21 @@ node {
         docker.image(KEY_IMAGE).inside{
             script{
                 echo "printing the data from the docker file"
-                a=12 
+                def a=12 
             }
 
         }
     }
+
+
 
     stage("accessing the value of docker in anotehr stage"){
         script { 
             println("$a")
         }
     }
+
+    
 
 
 
