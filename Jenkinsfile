@@ -31,7 +31,7 @@ node {
     }
 
     stage("calling the shared libraries"){
-        print()
+        jenkinsfunction()
     }
 
     
