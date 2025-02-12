@@ -1,6 +1,6 @@
 
 def name = "hello"
-@Library('utils') _
+@Library('utils@master') _
 node {
     def KEY_IMAGE = "ubuntu:latest" 
     stage("building an image") { 
