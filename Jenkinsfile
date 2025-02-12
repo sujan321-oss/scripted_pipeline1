@@ -16,7 +16,7 @@ node {
         docker.image(KEY_IMAGE).inside{
             script{
                 echo "printing the data from the docker file"
-                def a=12 
+                 a=12 
             }
 
         }
