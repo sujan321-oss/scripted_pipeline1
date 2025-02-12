@@ -1,6 +1,6 @@
 
 def name = "hello"
-
+@Library('utils') _
 node {
     def KEY_IMAGE = "ubuntu:latest" 
     stage("building an image") { 
@@ -28,6 +28,10 @@ node {
         script { 
             println("${a}")
         }
+    }
+
+    stage("calling the shared libraries"){
+        print()
     }
 
     
