@@ -2,6 +2,14 @@
 def name = "hello"
 @Library('utils@main') _
 node {
+    
+     parameters([ 
+  	
+	  string(name:"name of the jenkins runner" , defaultValue:"testinguser")
+
+     ])
+  
+
     def KEY_IMAGE = "ubuntu:latest" 
     stage("building an image") { 
 
