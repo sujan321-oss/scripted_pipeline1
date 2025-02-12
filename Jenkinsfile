@@ -42,7 +42,17 @@ node {
                println("This is from another branch")
              }  
  
- } 
+ }
+
+
+
+stage("Building another pipeline"){ 
+       build job: 'shared-librariespipline', 
+                 parameters: [ 
+                    string( name:'',value:"this is from another jenkins it is now building an image in another pipeline" )
+          ] 
+        
+ }  
     
 
 
