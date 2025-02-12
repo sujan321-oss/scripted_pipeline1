@@ -47,14 +47,19 @@ node {
 
 
 stage("Building another pipeline"){ 
+        script { 
+
+ 
+
+    
        build job: 'shared-librariespipline', 
                  parameters: [ 
-                    string( name:'',value:"this is from another jenkins it is now building an image in another pipeline" )
+                    string( name:'name',value:"this is from another jenkins it is now building an image in another pipeline" )
           ] 
         
- }  
+ }  }
     
 
 
 
-}
+}					
