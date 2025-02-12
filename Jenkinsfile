@@ -5,7 +5,7 @@ node {
     
      parameters([ 
   	
-	  string(name:"name of the jenkins runner" , defaultValue:"testinguser")
+	  string(name:"name" , defaultValue:"testinguser")
 
      ])
   
