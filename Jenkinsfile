@@ -42,6 +42,7 @@ node {
         script{ 
             jenkinsfunction()
         } 
+      println(" ${params.name}")
 
     }
 
