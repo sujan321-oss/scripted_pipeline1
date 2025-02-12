@@ -31,7 +31,10 @@ node {
     }
 
     stage("calling the shared libraries"){
-        jenkinsfunction()
+        script{ 
+            jenkinsfunction()
+        } 
+
     }
 
     
