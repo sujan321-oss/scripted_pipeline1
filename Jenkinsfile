@@ -36,7 +36,13 @@ node {
         } 
 
     }
-
+ 
+  stage("another_branch") { 
+    script { 
+               println("This is from another branch")
+             }  
+ 
+ } 
     
 
 
