@@ -26,7 +26,7 @@ node {
 
     stage("accessing the value of docker in anotehr stage"){
         script { 
-            println("$a")
+            println("${a}")
         }
     }
 
